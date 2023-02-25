@@ -7,7 +7,7 @@ import pl.smsapi.exception.SmsapiException;
 import pl.smsapi.proxy.ProxyNative;
 
 public class ExSms {
-    public static void main(String[] args) {
+    public static void send() {
         try {
             String oauthToken = System.getenv("SMS_TOKEN");
             OAuthClient client = new OAuthClient(oauthToken);
